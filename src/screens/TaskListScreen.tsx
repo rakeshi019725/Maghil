@@ -21,7 +21,6 @@ const TaskListScreen = ({ navigation }: any) => {
     useEffect(() => {
         saveTasks(tasks);
     }, [tasks]);
-
     const retry = async (task: any) => {
         try {
             await syncTaskToServer(task);
